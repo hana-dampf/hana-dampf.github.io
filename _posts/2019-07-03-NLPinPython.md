@@ -4,7 +4,7 @@ title: "Pablo Neural-da: I learn Python, my model learns what love is"
 categories: [Python, Machine Learning, Language]
 ---
 
-So, how am I spending my free time these days? Very slowly learning Python. Working with natural language processing seems like a good way to A) keep myself humble and B) get my computer to spit out hilarious results.
+So, how am I spending my free time these days? Very slowly learning Python. Working with natural language processing seems like a good way to keep myself humble, and to get to make fun of computers for not talking good.
 
 I did this using the [Beautiful Soup library](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) for webscraping, and based my approach on Zach Thoutt's [LSTM model](https://github.com/zackthoutt/got-book-6), rewriting his tensorflow 1.0.0 RNN in keras, with some changes to the embedding structure.
 
