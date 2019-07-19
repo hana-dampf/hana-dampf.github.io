@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pablo Neural-da: I learn Python, as my model learns to love
+title: Pablo Neural-da: I learn Python, by teaching my model to **love**
 categories: [Miscellaneous, Jekyll]
 ---
 
