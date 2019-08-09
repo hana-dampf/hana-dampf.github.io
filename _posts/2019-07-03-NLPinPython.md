@@ -45,7 +45,7 @@ My current model was built by first translating the entire text corpus into inte
 <pre>
 Model: "sequential"
 _________________________________________________________________
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Param #   https://keras.io/losses/
 =================================================================
 embedding (Embedding)        (None, None, 512)         2783744   
 _________________________________________________________________
@@ -61,7 +61,7 @@ Total params: 11,870,525
 Trainable params: 11,870,525
 Non-trainable params: 0
 _________________________________________________________________
-</pre>  </details>
+\ </pre>  </details>
 
 
 If anyone has some suggestions about how to improve this, let me know! 
