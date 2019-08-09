@@ -42,24 +42,24 @@ The way poems were generated was the clever idea I borrowed from Zach Thoutt: to
 <details>
 <summary>model summary</summary>
 <br>
-Model: "sequential"\n
-_________________________________________________________________\n
-Layer (type)                 Output Shape              Param #   \n
-=================================================================\n
-embedding (Embedding)        (None, None, 512)         2783744   \n
-_________________________________________________________________\n
-lstm (LSTM)                  (None, None, 512)         2099200   \n
-_________________________________________________________________\n
-lstm_1 (LSTM)                (None, None, 512)         2099200   \n
-_________________________________________________________________\n
-lstm_2 (LSTM)                (None, None, 512)         2099200   \n
-_________________________________________________________________\n
-dense (Dense)                (None, None, 5437)        2789181   \n
-=================================================================\n
-Total params: 11,870,525\n
-Trainable params: 11,870,525\n
-Non-trainable params: 0\n
-_________________________________________________________________\n
+Model: "sequential"<br>
+_________________________________________________________________<br>
+Layer (type)                 Output Shape              Param #   <br>
+=================================================================<br>
+embedding (Embedding)        (None, None, 512)         2783744   <br>
+_________________________________________________________________<br>
+lstm (LSTM)                  (None, None, 512)         2099200   <br>
+_________________________________________________________________<br>
+lstm_1 (LSTM)                (None, None, 512)         2099200   <br>
+_________________________________________________________________<br>
+lstm_2 (LSTM)                (None, None, 512)         2099200   <br>
+_________________________________________________________________<br>
+dense (Dense)                (None, None, 5437)        2789181   <br>
+=================================================================<br>
+Total params: 11,870,525<br>
+Trainable params: 11,870,525<br>
+Non-trainable params: 0<br>
+_________________________________________________________________<br>
 </details>
 
 My current model was built by first translating the entire text corpus into integers, then training my neural net with sequences of integers in 5 batches. The model takes the sequences through an embedding layer (meant to translate each word into a vector encoded by its relationship with other words) where the weights of the embedding are trained with the model (rather than using an existing trained embedding such as Word2Vec). Next, the embedding vector is passed through 3 LSTM layers returning full sequences (dropout 0.3), then passed to a final Dense prediction layer (with softmax activation). This structure returns the probability for all words in the library being the next word after the input (the outputs were the next words after the sequence coded as 1-hot vectors). 
