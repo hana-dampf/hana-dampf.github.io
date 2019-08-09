@@ -15,7 +15,36 @@ I decided to train my model on a corpus of Pablo Neruda's poems because A) I tho
 <details>
 <summary>After 200 training epochs</summary>
 <br>
-Blah Blah
+oh believed,
+colored,
+
+,
+a sky’s line. wounds day hour without back man me
+on in, suffocating swaying sea
+their
+in and you and
+blue
+wind mouths things
+another lives flights the, pain move we and although, and it day
+
+saw let prologue with, centuries
+, i
+days always
+that, knees,,
+far, radiance so farewells its wake, me breaking, used in-laws day castro kisses going rocky. flowers
+giant
+force those, eyes your one and melded. blind fit had
+<poembreak> loose
+won't in,.; have boil hair the
+
+true furtive through. what,
+and be earth-star
+all web of a woman by the,, certain
+through dying, the the fathers by for stones, asking secret me newly so secret country
+no the certain your glued the immense hearts
+room couples a
+filled to me men home of the himself was causes it time and! the,, there mine,
+
 </details>
 
 That's the minimum benchmark I'm trying to hit. You can see after 200 epochs, it's picked up some basic grammar and punctuation structure, which is pretty impressive. But I'm not here to copy-paste someone else's code!
