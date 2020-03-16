@@ -16,35 +16,35 @@ I decided to train my model on a corpus of Pablo Neruda's poems because A) I tho
 <summary>After 200 training epochs</summary>
 <br>
   <pre>
-oh believed,
-colored,
+  oh believed,
+  colored,
 
-,
-a sky’s line. wounds day hour without back man me
-on in, suffocating swaying sea
-their
-in and you and
-blue
-wind mouths things
-another lives flights the, pain move we and although, and it day
+  ,
+  a sky’s line. wounds day hour without back man me
+  on in, suffocating swaying sea
+  their
+  in and you and
+  blue
+  wind mouths things
+  another lives flights the, pain move we and although, and it day
 
-saw let prologue with, centuries
-, i
-days always
-that, knees,,
-far, radiance so farewells its wake, me breaking, used in-laws day castro kisses going rocky. flowers
-giant
-force those, eyes your one and melded. blind fit had
-<poembreak> loose
-won't in,.; have boil hair the
+  saw let prologue with, centuries
+  , i
+  days always
+  that, knees,,
+  far, radiance so farewells its wake, me breaking, used in-laws day castro kisses going rocky. flowers
+  giant
+  force those, eyes your one and melded. blind fit had
+  <poembreak> loose
+  won't in,.; have boil hair the
 
-true furtive through. what,
-and be earth-star
-all web of a woman by the,, certain
-through dying, the the fathers by for stones, asking secret me newly so secret country
-no the certain your glued the immense hearts
-room couples a
-filled to me men home of the himself was causes it time and! the,, there mine,
+  true furtive through. what,
+  and be earth-star
+  all web of a woman by the,, certain
+  through dying, the the fathers by for stones, asking secret me newly so secret country
+  no the certain your glued the immense hearts
+  room couples a
+  filled to me men home of the himself was causes it time and! the,, there mine,
 <br>
  </pre></details>
 
@@ -73,24 +73,24 @@ My current model was built by first translating the entire text corpus into inte
 <summary>model summary</summary>
 <br>
 <pre>
-Model: "sequential"
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-embedding (Embedding)        (None, None, 512)         2783744   
-_________________________________________________________________
-lstm (LSTM)                  (None, None, 512)         2099200   
-_________________________________________________________________
-lstm_1 (LSTM)                (None, None, 512)         2099200   
-_________________________________________________________________
-lstm_2 (LSTM)                (None, None, 512)         2099200   
-_________________________________________________________________
-dense (Dense)                (None, None, 5437)        2789181   
-=================================================================
-Total params: 11,870,525
-Trainable params: 11,870,525
-Non-trainable params: 0
-_________________________________________________________________
+  Model: "sequential"
+  _________________________________________________________________
+  Layer (type)                 Output Shape              Param #   
+  =================================================================
+  embedding (Embedding)        (None, None, 512)         2783744   
+  _________________________________________________________________
+  lstm (LSTM)                  (None, None, 512)         2099200   
+  _________________________________________________________________
+  lstm_1 (LSTM)                (None, None, 512)         2099200   
+  _________________________________________________________________
+  lstm_2 (LSTM)                (None, None, 512)         2099200   
+  _________________________________________________________________
+  dense (Dense)                (None, None, 5437)        2789181   
+  =================================================================
+  Total params: 11,870,525
+  Trainable params: 11,870,525
+  Non-trainable params: 0
+  _________________________________________________________________
 </pre>  </details>
 
 
