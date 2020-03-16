@@ -13,9 +13,9 @@ I did this using the [Beautiful Soup library](https://www.crummy.com/software/Be
 I decided to train my model on a corpus of Pablo Neruda's poems because A) I thought of the Neural-da joke and B) it was comparatively easy to scrape. I was curious about how well a model trained from nothing, using only my corpus, would do at prediction. These are the results I got using entirely Zach Thoutt's code:
 
 <details>
-<summary>After 200 training epochs</summary>
-<br>
-<pre>
+  <summary>After 200 training epochs</summary>
+  <br>
+  <pre>
   oh believed,
   colored,
 
@@ -45,8 +45,8 @@ I decided to train my model on a corpus of Pablo Neruda's poems because A) I tho
   no the certain your glued the immense hearts
   room couples a
   filled to me men home of the himself was causes it time and! the,, there mine,
-<br>
-</pre>
+  <br>
+  </pre>
 </details>
 
 That's the minimum benchmark I'm trying to hit. You can see after 200 epochs, it's picked up some basic grammar and punctuation structure, which is pretty impressive. But I'm not here to copy-paste someone else's code!
