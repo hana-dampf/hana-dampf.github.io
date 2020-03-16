@@ -16,7 +16,6 @@ I decided to train my model on a corpus of Pablo Neruda's poems because A) I tho
   <summary>After 200 training epochs</summary>
   
   <br>
-  <pre>
   oh believed,
   colored,
 
