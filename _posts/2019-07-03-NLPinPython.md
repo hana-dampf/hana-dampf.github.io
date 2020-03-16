@@ -47,7 +47,7 @@ I decided to train my model on a corpus of Pablo Neruda's poems because A) I tho
   room couples a
   filled to me men home of the himself was causes it time and! the,, there mine,
   <br>
-  <\pre>
+  </pre>
 </details>
 
 That's the minimum benchmark I'm trying to hit. You can see after 200 epochs, it's picked up some basic grammar and punctuation structure, which is pretty impressive. But I'm not here to copy-paste someone else's code!
