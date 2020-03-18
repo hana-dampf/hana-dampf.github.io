@@ -14,7 +14,7 @@ I decided to train my model on a corpus of Pablo Neruda's poems because A) I tho
 
   ## After 200 training epochs
   
-```{r, eval=FALSE, error=FALSE}    
+```    
   oh believed,  
   colored,  
   
@@ -44,7 +44,6 @@ I decided to train my model on a corpus of Pablo Neruda's poems because A) I tho
   no the certain your glued the immense hearts  
   room couples a  
   filled to me men home of the himself was causes it time and! the,, there mine,   
-  
 ```
 
 The way poems were generated was the clever idea from Zach Thoutt: to first ensure the model could take dynamic-length sequences, meaning I could start a poem from a single seed word then use the model's output probabilities to pick each word, then repeat with the 2 word sequence, and so on. Using the model's output probabilities with the np.random.choice function instead of picking the most likely option injected a degree of randomness (meaning it would not recreate exact passages).
