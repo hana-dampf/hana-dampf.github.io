@@ -12,7 +12,7 @@ I did this using the [Beautiful Soup library](https://www.crummy.com/software/Be
 
 I decided to train my model on a corpus of Pablo Neruda's poems because A) I thought of the Neural-da joke and B) it was comparatively easy to scrape. I was curious about how well a model trained from nothing, using only my corpus, would do at prediction. These are the results I got using entirely Zach Thoutt's code:
 
-  ##After 200 training epochs
+  ## After 200 training epochs
 <pre>
     
   oh believed,  
