@@ -11,10 +11,8 @@ So, how am I spending my free time these days? Very slowly learning Python. Work
 I did this using the [Beautiful Soup library](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) for webscraping, and based my approach on Zach Thoutt's [LSTM model](https://github.com/zackthoutt/got-book-6), rewriting his tensorflow 1.0.0 RNN in keras, with some changes to the embedding structure.
 
 I decided to train my model on a corpus of Pablo Neruda's poems because A) I thought of the Neural-da joke and B) it was comparatively easy to scrape. I was curious about how well a model trained from nothing, using only my corpus, would do at prediction. These are the results I got using entirely Zach Thoutt's code:
-<style>
-div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "blue">
+
+</pre>
   
   ##After 200 training epochs
   
@@ -47,7 +45,7 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
   no the certain your glued the immense hearts  
   room couples a  
   filled to me men home of the himself was causes it time and! the,, there mine,   
-<\div>
+<\pre>
 
 The way poems were generated was the clever idea from Zach Thoutt: to first ensure the model could take dynamic-length sequences, meaning I could start a poem from a single seed word then use the model's output probabilities to pick each word, then repeat with the 2 word sequence, and so on. Using the model's output probabilities with the np.random.choice function instead of picking the most likely option injected a degree of randomness (meaning it would not recreate exact passages).
 
