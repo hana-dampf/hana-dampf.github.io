@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Pablo Neural-da: I learn Python by teaching my computer what love is"
 categories: [Python, Machine Learning, Language]
 ---
