@@ -56,9 +56,9 @@ My current model was built by first translating the entire text corpus into inte
 
 Model: "sequential"	
   _________________________________________________________________	  
-  Layer (type)                          Output Shape              Param #   	     
+  Layer (type)                           Output Shape              Param #   	     
   _________________________________________________________________
-  embedding (Embedding)        (None, None, 512)         2783744   	     
+  embedding (Embedding)      (None, None, 512)         2783744   	     
   _________________________________________________________________	 
   lstm (LSTM)                          (None, None, 512)         2099200   	    
   _________________________________________________________________	 
@@ -66,7 +66,7 @@ Model: "sequential"
   _________________________________________________________________	  
   lstm_2 (LSTM)                      (None, None, 512)         2099200   	    
   _________________________________________________________________	 
-  dense (Dense)                      (None, None, 5437)        2789181   	  
+  dense (Dense)                      (None, None, 5437)      2789181   	  
   _________________________________________________________________
   Total params: 11,870,525
   Trainable params: 11,870,525
