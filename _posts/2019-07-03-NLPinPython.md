@@ -4,8 +4,6 @@ title: "Pablo Neural-da: I learn Python by teaching my computer what love is"
 categories: [Python, Machine Learning, Language]
 ---
 
-##Under Construction!
-
 So, how am I spending my free time these days? Very slowly learning Python. Working with natural language processing seemed like a good way to stay humble.
 
 I did this using the [Beautiful Soup library](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) for webscraping, and based my approach on Zach Thoutt's [LSTM model](https://github.com/zackthoutt/got-book-6), rewriting his tensorflow 1.0.0 RNN in the keras library.
@@ -58,17 +56,17 @@ My current model was built by first translating the entire text corpus into inte
 <pre>
   Model: "sequential"	
   _________________________________________________________________	  
-  Layer (type)                 Output Shape              Param #   	     
+  Layer (type)                          Output Shape              Param #   	     
   _________________________________________________________________
   embedding (Embedding)        (None, None, 512)         2783744   	     
   _________________________________________________________________	 
-  lstm (LSTM)                  (None, None, 512)         2099200   	    
+  lstm (LSTM)                          (None, None, 512)         2099200   	    
   _________________________________________________________________	 
-  lstm_1 (LSTM)                (None, None, 512)         2099200   	 
+  lstm_1 (LSTM)                      (None, None, 512)         2099200   	 
   _________________________________________________________________	  
-  lstm_2 (LSTM)                (None, None, 512)         2099200   	    
+  lstm_2 (LSTM)                      (None, None, 512)         2099200   	    
   _________________________________________________________________	 
-  dense (Dense)                (None, None, 5437)        2789181   	  
+  dense (Dense)                      (None, None, 5437)        2789181   	  
   _________________________________________________________________
   Total params: 11,870,525
   Trainable params: 11,870,525
