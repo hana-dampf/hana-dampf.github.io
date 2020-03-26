@@ -56,11 +56,10 @@ My current model was built by first translating the entire text corpus into inte
 
 <h3>Model summary:</h3>
 <pre>
-
   Model: "sequential"	
   _________________________________________________________________	  
   Layer (type)                 Output Shape              Param #   	     
-  =================================================================	 
+  _________________________________________________________________
   embedding (Embedding)        (None, None, 512)         2783744   	     
   _________________________________________________________________	 
   lstm (LSTM)                  (None, None, 512)         2099200   	    
@@ -70,12 +69,11 @@ My current model was built by first translating the entire text corpus into inte
   lstm_2 (LSTM)                (None, None, 512)         2099200   	    
   _________________________________________________________________	 
   dense (Dense)                (None, None, 5437)        2789181   	  
-  =================================================================	 
+  _________________________________________________________________
   Total params: 11,870,525
   Trainable params: 11,870,525
   Non-trainable params: 0
-  _________________________________________________________________
-  
+  _________________________________________________________________  
 </pre>
 
 If anyone has some suggestions about how to improve this, let me know! 
