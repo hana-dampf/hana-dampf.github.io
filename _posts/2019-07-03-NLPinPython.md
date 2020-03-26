@@ -54,7 +54,7 @@ The way poems were generated was the clever idea from Zach Thoutt: to first ensu
 My current model was built by first translating the entire text corpus into integers, then training my neural net with sequences of integers in 5 batches. The model takes the sequences through an embedding layer (meant to translate each word into a vector encoded by its relationship with other words) where the weights of the embedding are trained with the model (rather than using an existing trained embedding such as Word2Vec). Next, the embedding vector is passed through 3 LSTM layers returning full sequences (dropout 0.3), then passed to a final Dense prediction layer (with softmax activation). This structure returns the probability for all words in the library being the next word after the input (the outputs were the next words after the sequence coded as 1-hot vectors). 
 
 
-<summary>model summary</summary>
+<h3>Model summary:</h3>
 <br>
 Model: "sequential"
 
