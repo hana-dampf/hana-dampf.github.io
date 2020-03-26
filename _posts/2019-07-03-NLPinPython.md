@@ -54,8 +54,8 @@ My current model was built by first translating the entire text corpus into inte
 
 <summary>model summary</summary>
 <br>
-<pre>
-  Model: "sequential"
+```
+Model: "sequential"
   _________________________________________________________________
   Layer (type)                 Output Shape              Param #   
   =================================================================
@@ -73,7 +73,7 @@ My current model was built by first translating the entire text corpus into inte
   Trainable params: 11,870,525
   Non-trainable params: 0
   _________________________________________________________________
-</pre> 
+```
 </details>
 
 If anyone has some suggestions about how to improve this, let me know! 
