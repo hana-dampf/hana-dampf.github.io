@@ -10,7 +10,7 @@ So, how am I spending my free time these days? Very slowly learning Python. Work
 
 I did this using the [Beautiful Soup library](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) for webscraping, and based my approach on Zach Thoutt's [LSTM model](https://github.com/zackthoutt/got-book-6), rewriting his tensorflow 1.0.0 RNN in keras, with some changes to the embedding structure.
 
-I decided to train my model on a corpus of Pablo Neruda's poems because A) I thought of the Neural-da joke and B) it was comparatively easy to scrape. I was curious about how well a model trained from nothing, using only my corpus, would do at prediction. These are the results I got using entirely Zach Thoutt's code
+I decided to train my model on a corpus of Pablo Neruda's poems because A) I thought of the Neural-da joke and B) it was comparatively easy to scrape. I was curious about how well a model trained from nothing, using only my corpus, would do at prediction. These are the results I got using entirely Zach Thoutt's code:
 
   
 <details>
@@ -60,14 +60,10 @@ Model: "sequential"
 
   |Layer (type)|Output Shape|Param #|   
   |---|---|---|
-  |embedding (Embedding)|(None, None, 512)|2783744|   
-  
+  |embedding (Embedding)|(None, None, 512)|2783744|  
   |lstm (LSTM)|(None, None, 512)|2099200|   
-  
   |lstm_1 (LSTM)|(None, None, 512)|2099200|   
-  
   |lstm_2 (LSTM)|(None, None, 512)|2099200|  
-  
   |dense (Dense)|(None, None, 5437)|2789181|   
   _________________________________________________________________
 
