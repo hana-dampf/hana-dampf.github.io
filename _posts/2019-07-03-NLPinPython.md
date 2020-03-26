@@ -53,6 +53,7 @@ My current model was built by first translating the entire text corpus into inte
 
 
 <h3>Model summary:</h3>
+<pre>
 
 Model: "sequential"	
   _________________________________________________________________	  
@@ -72,6 +73,7 @@ Model: "sequential"
   Trainable params: 11,870,525
   Non-trainable params: 0
   _________________________________________________________________  
+</pre>
 
 If anyone has some suggestions about how to improve this, let me know! 
 
