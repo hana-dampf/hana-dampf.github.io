@@ -12,9 +12,11 @@ I did this using the [Beautiful Soup library](https://www.crummy.com/software/Be
 
 I decided to train my model on a corpus of Pablo Neruda's poems because A) I thought of the Neural-da joke and B) it was comparatively easy to scrape. I was curious about how well a model trained from nothing, using only my corpus, would do at prediction. These are the results I got using entirely Zach Thoutt's code
 
-   **After 200 training epochs:**
   
-```    
+<details>
+       <summary>After 200 training epochs</summary>
+ <pre>
+
   oh believed,  
   colored,  
   
@@ -44,37 +46,34 @@ I decided to train my model on a corpus of Pablo Neruda's poems because A) I tho
   no the certain your glued the immense hearts  
   room couples a  
   filled to me men home of the himself was causes it time and! the,, there mine,   
-```
+</pre>
+</details>
 
 The way poems were generated was the clever idea from Zach Thoutt: to first ensure the model could take dynamic-length sequences, meaning I could start a poem from a single seed word then use the model's output probabilities to pick each word, then repeat with the 2 word sequence, and so on. Using the model's output probabilities with the np.random.choice function instead of picking the most likely option injected a degree of randomness (meaning it would not recreate exact passages).
 
 My current model was built by first translating the entire text corpus into integers, then training my neural net with sequences of integers in 5 batches. The model takes the sequences through an embedding layer (meant to translate each word into a vector encoded by its relationship with other words) where the weights of the embedding are trained with the model (rather than using an existing trained embedding such as Word2Vec). Next, the embedding vector is passed through 3 LSTM layers returning full sequences (dropout 0.3), then passed to a final Dense prediction layer (with softmax activation). This structure returns the probability for all words in the library being the next word after the input (the outputs were the next words after the sequence coded as 1-hot vectors). 
 
-<details>
 
 <summary>model summary</summary>
 <br>
-```
 Model: "sequential"
+
+  |Layer (type)|Output Shape|Param #|   
+  |---|---|---|
+  |embedding (Embedding)|(None, None, 512)|2783744|   
+  
+  |lstm (LSTM)|(None, None, 512)|2099200|   
+  
+  |lstm_1 (LSTM)|(None, None, 512)|2099200|   
+  
+  |lstm_2 (LSTM)|(None, None, 512)|2099200|  
+  
+  |dense (Dense)|(None, None, 5437)|2789181|   
   _________________________________________________________________
-  Layer (type)                 Output Shape              Param #   
-  =================================================================
-  embedding (Embedding)        (None, None, 512)         2783744   
-  _________________________________________________________________
-  lstm (LSTM)                  (None, None, 512)         2099200   
-  _________________________________________________________________
-  lstm_1 (LSTM)                (None, None, 512)         2099200   
-  _________________________________________________________________
-  lstm_2 (LSTM)                (None, None, 512)         2099200   
-  _________________________________________________________________
-  dense (Dense)                (None, None, 5437)        2789181   
-  =================================================================
+
   Total params: 11,870,525
   Trainable params: 11,870,525
   Non-trainable params: 0
-  _________________________________________________________________
-```
-</details>
 
 If anyone has some suggestions about how to improve this, let me know! 
 
