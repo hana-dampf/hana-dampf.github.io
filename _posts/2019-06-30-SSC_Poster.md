@@ -4,7 +4,7 @@ title: SSC 2019 Poster
 categories: [Survey Data, SSC Case Contest, Categorical Analysis]
 ---
 
-This poster was a winning presentation at the SSC Case Contest 2019. My role in this project was data cleaning, verifying the validity of adjusted regression estimate methods, and a partial role in coding the regression analysis and preparing graphics and the poster, in addition to helping prepare the presentation that was delivered by group member Christina Zhou.
+This poster was a winning presentation at the SSC Case Contest 2019. My role in this project was data cleaning, verifying the validity of adjusted regression estimate methods, and a partial role in coding the regression analysis, preparing graphics and the poster, in addition to research for the presentation that was delivered by group member Christina Zhou.
 
 ![Poster](/images/poster final6_CZ_SP.png)
 
