@@ -1,2 +1,0 @@
-format: post
-title:
