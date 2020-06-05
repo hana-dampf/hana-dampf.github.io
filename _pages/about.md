@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-I am a recent M.Sc. in Biostatistics graduate, having worked as a Research Associate at the Institute of Health Policy, Management and Evaluation at U of T and as a support specialist for Epic EMR implementations. My current focus is applying predictive and inferential statistics techniques to Canadian healthcare datasets and problems.
+I am a recent M.Sc. in Biostatistics graduate, currently working as a Clinical Informatics Lead for Alberta Health Services. My previous focus was applying predictive and inferential statistics techniques to Canadian healthcare datasets and problems.
 
-This website was forked from the lovely [Reverie](https://jekyllthemes.io/theme/reverie) template, which is based in Jekyll.
+This website was forked from the lovely [Reverie](https://jekyllthemes.io/theme/reverie) template, which is generated in Jekyll.
